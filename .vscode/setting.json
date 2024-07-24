@@ -1,0 +1,12 @@
+{
+  "typescript.preferences.importModuleSpecifier": "auto",
+  "javascript.preferences.importModuleSpecifier": "auto",
+  "typescript.format.enable": false,
+  "javascript.format.enable": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.tabSize": 2,
+  "editor.autoIndent": true,
+  "editor.formatOnSave": true
+}

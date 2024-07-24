@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/apple/Desktop/My Project/ERM/Logs/errors/.6dea1ebe7bad73ca4080f98d08d3e838692c530e-audit.json",
+    "files": [
+        {
+            "date": 1721750700472,
+            "name": "/Users/apple/Desktop/My Project/ERM/Logs/errors/E-R-M-2024-23-07-21-error.log",
+            "hash": "675f2d17523a71f0f3fe1d6fc111e7bc5102591865c4b85a30f733bfac0613e1"
+        },
+        {
+            "date": 1721752364889,
+            "name": "/Users/apple/Desktop/My Project/ERM/Logs/errors/E-R-M-2024-23-07-22-error.log",
+            "hash": "c720f34cb7c45d5e093b982cf3c24758762e5885d7e26e7838dd18c2aaf40bad"
+        },
+        {
+            "date": 1721756370787,
+            "name": "/Users/apple/Desktop/My Project/ERM/Logs/errors/E-R-M-2024-23-07-23-error.log",
+            "hash": "29db8ed08c9dc8cb6f78b0e0592646f35a9debae91d4904eee29dc648aa43f0e"
+        },
+        {
+            "date": 1721790311433,
+            "name": "/Users/apple/Desktop/My Project/ERM/Logs/errors/E-R-M-2024-24-07-08-error.log",
+            "hash": "fc748eb3c6d4c93b28e7e60b7fbf9c9b7f7f6e797929de0a19443c5ebbb6580a"
+        }
+    ],
+    "hashType": "sha256"
+}

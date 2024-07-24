@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/apple/Desktop/My Project/University-managment-auth-service-main/Logs/success/.d79d023d80ef2fa8b3c7c4d6e488025da394bfa6-audit.json",
+    "files": [
+        {
+            "date": 1721463468520,
+            "name": "/Users/apple/Desktop/My Project/University-managment-auth-service-main/Logs/success/E-R-M-2024-20-07-13-success.log",
+            "hash": "cb2b9cf761107c665434a068e397bf844b90f742da800c154f0ce7ac100193cd"
+        },
+        {
+            "date": 1721464267760,
+            "name": "/Users/apple/Desktop/My Project/University-managment-auth-service-main/Logs/success/E-R-M-2024-20-07-14-success.log",
+            "hash": "e5f7fe3592d2b1dade78d95848461463aafe8b2f45b0c43239b50e95e4b7f630"
+        }
+    ],
+    "hashType": "sha256"
+}
