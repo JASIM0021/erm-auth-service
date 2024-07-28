@@ -10,11 +10,8 @@ const zod_1 = require("zod");
 //   password:String
 exports.createUserZodSchema = zod_1.z.object({
     body: zod_1.z.object({
-        firstName: zod_1.z.string({
+        fullName: zod_1.z.string({
             required_error: 'firstName is required',
-        }),
-        lastName: zod_1.z.string({
-            required_error: 'lastName is required',
         }),
         email: zod_1.z.string({
             required_error: 'email is required',
