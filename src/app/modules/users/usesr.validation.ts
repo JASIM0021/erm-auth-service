@@ -9,12 +9,10 @@ import { z } from 'zod'
 export const createUserZodSchema = z.object({
   body: z.object({
    
-    firstName: z.string({
+    fullName: z.string({
       required_error: 'firstName is required',
     }),
-    lastName: z.string({
-      required_error: 'lastName is required',
-    }),
+  
     email: z.string({
       required_error: 'email is required',
     }).email("Email not Valid"),

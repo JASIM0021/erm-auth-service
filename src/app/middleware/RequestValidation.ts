@@ -6,7 +6,7 @@ const validateRequest =
     req: Request,
     res: Response,
     next: NextFunction
-  ): Promise<void | any> => {
+  )  => {
     try {
       await schema.parseAsync({
         body: req.body,

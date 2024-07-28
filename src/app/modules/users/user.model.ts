@@ -3,8 +3,7 @@ import { IUser, UserModel } from './user.interface'
 
 const userSchema = new Schema<IUser>(
   {
-  firstName:String,
-  lastName:String,
+  fullName:String,
   email:String,
   gender:String,
   age:Number,

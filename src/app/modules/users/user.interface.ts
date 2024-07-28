@@ -10,8 +10,7 @@ import { boolean, number } from 'zod'
 // Password,
 // ConfirmPassword
 export type IUser = {
-  firstName:string,
-  lastName:string,
+  fullName:string,
   email:string,
   gender:string,
   age:number,
