@@ -5,6 +5,7 @@ import { sendResponse } from '../../../shared/sendResponse';
 import httpStatus from 'http-status';
 const createUser = catchAsync(async (req, res, next) => {
   const  user  = req.body;
+  console.log('user', user)
   const {data,message,statusCode,success} = await UserService.createUser(user);
   next();
 

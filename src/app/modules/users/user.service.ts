@@ -12,8 +12,9 @@ const createUser = async (user: IUser): Promise<IUserResponse> => {
   try {
     const id = await getUserId()
     // if (!user.password) user.password = config.user_default_password as string
-    const existingUser =await User.find({email:user?.email}).lean()
-    if(existingUser){ return {
+    const existingUser = await User.find({email:user?.email})
+    console.log('existingUser', existingUser)
+    if(existingUser?.length > 0){ return {
       data: null,
       message: 'User alrady exists',
       statusCode: httpStatus.NOT_ACCEPTABLE,
@@ -23,23 +24,26 @@ const createUser = async (user: IUser): Promise<IUserResponse> => {
     const hash = bcrypt.hashSync(user?.password, config.password_solt || 10);
     user.password = hash
     const createUser = await User.create(user)
-
-    if (!createUser) throw new ApiError(4000, 'Faild to create user')
+ console.log('createUser', createUser)
       return {
         data: createUser,
         message: 'User created successfull',
         statusCode: httpStatus.OK,
         success: true
       } 
+ console.log('createUser', createUser)
+    
+      
   } catch (error) {
     errorlogger.error("Create user faild", error)
+    return {
+      data: null,
+      message: 'User created Faild',
+      statusCode: httpStatus.NOT_ACCEPTABLE,
+      success: false
+    }
   }
-  return {
-    data: null,
-    message: 'User created Faild',
-    statusCode: httpStatus.NOT_ACCEPTABLE,
-    success: false
-  } 
+   
 }
 
 
