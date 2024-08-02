@@ -7,7 +7,7 @@
     "src/**/*.ts": "yarn lint-prettier"
   },
   "engines": {
-    "node": "<=18.16.0"
+    "node": ">=18.16.0"
   },
   "scripts": {
     "start": "ts-node-dev --respawn --transpile-only src/server.ts",
@@ -17,7 +17,7 @@
     "prettier:fix": "prettier --write .",
     "lint-prettier": "yarn lint && yarn  format",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy":" curl -X POST 'https://api.render.com/deploy/srv-cqgjitaj1k6c73df1740?key=uN49eJMns9E'"
+    "deploy": " curl -X POST 'https://api.render.com/deploy/srv-cqgjitaj1k6c73df1740?key=uN49eJMns9E'"
   },
   "author": "jasim0021",
   "license": "ISC",

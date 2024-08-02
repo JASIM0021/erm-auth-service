@@ -1,0 +1,40 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/apple/Desktop/MyProject/ERM/Logs/success/.55a63b9d3429fc9cbbc1b698a056531e09402351-audit.json",
+    "files": [
+        {
+            "date": 1722315301211,
+            "name": "/Users/apple/Desktop/MyProject/ERM/Logs/success/E-R-M-2024-30-07-10-success.log",
+            "hash": "ea0a55ca9e340fd88d7ea2cb883c3211e45707a7ca5fb4b75ba69e127f5c938f"
+        },
+        {
+            "date": 1722359123053,
+            "name": "/Users/apple/Desktop/MyProject/ERM/Logs/success/E-R-M-2024-30-07-22-success.log",
+            "hash": "56b04d64f741d4b10ff3c24e285f6d6dc82280773c5bfcd2bfdab8caa51a4349"
+        },
+        {
+            "date": 1722363444869,
+            "name": "/Users/apple/Desktop/MyProject/ERM/Logs/success/E-R-M-2024-30-07-23-success.log",
+            "hash": "718807bedc5cb09f0f9cba64a026658b3fb851a5a815610e775b5223675672f4"
+        },
+        {
+            "date": 1722445354172,
+            "name": "/Users/apple/Desktop/MyProject/ERM/Logs/success/E-R-M-2024-31-07-22-success.log",
+            "hash": "2d595de2c0e73dd5afba1d3f324b3fd32909a5ab6c30e99d6733a65d7417ac60"
+        },
+        {
+            "date": 1722448887194,
+            "name": "/Users/apple/Desktop/MyProject/ERM/Logs/success/E-R-M-2024-31-07-23-success.log",
+            "hash": "1129c52d95644b0b995078b5428d7d0a9bdfd3ba11f2b8b7ef643049e34c730a"
+        },
+        {
+            "date": 1722571298415,
+            "name": "/Users/apple/Desktop/MyProject/ERM/Logs/success/E-R-M-2024-02-08-09-success.log",
+            "hash": "746abc4e8a44403a3d9979ee19e95b8c332af9ea38f458691647ba08f4bec0d3"
+        }
+    ],
+    "hashType": "sha256"
+}

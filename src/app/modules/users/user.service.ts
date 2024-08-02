@@ -31,7 +31,6 @@ const createUser = async (user: IUser): Promise<IUserResponse> => {
         statusCode: httpStatus.OK,
         success: true
       } 
- console.log('createUser', createUser)
     
       
   } catch (error) {
@@ -51,9 +50,11 @@ const loginUser = async (user: IUser): Promise<IUserResponse> => {
 
   try {
 
+    console.log('user', user)
 
     const findUser = await User.find({ email: user?.email }).lean()
 
+    console.log('findUser', findUser)
     if (!findUser)   return {
       data: null,
       message: 'User not Found!',
@@ -61,7 +62,16 @@ const loginUser = async (user: IUser): Promise<IUserResponse> => {
       success: false
     }
 
-    const match = bcrypt.compareSync(user?.password, findUser[0].password); // true
+    if(findUser?.length <1){
+      return {
+        data: null,
+        message: "User not Found!",
+        statusCode: httpStatus.NOT_ACCEPTABLE,
+        success: false
+      }
+    }
+
+    const match = bcrypt.compareSync(user?.password, findUser[0]?.password); // true
 
 
 
@@ -86,6 +96,7 @@ const loginUser = async (user: IUser): Promise<IUserResponse> => {
 
   } catch (error) {
     errorlogger.error("login  faild", error)
+    console.log('error', error)
     return   {
       data: null,
       message: 'Login Faild!',
